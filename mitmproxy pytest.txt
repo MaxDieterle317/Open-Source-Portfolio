@@ -1,0 +1,441 @@
+====================================================== test session starts =======================================================
+platform win32 -- Python 3.14.3, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\My VSCode\mitmproxy
+configfile: pyproject.toml
+testpaths: test
+plugins: hypothesis-6.130.6, asyncio-1.2.0, cov-7.0.0, timeout-2.4.0, xdist-3.8.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 2005 items                                                                                                              
+
+test\examples\test_examples.py ......
+test\mitmproxy\addons\test_anticache.py .
+test\mitmproxy\addons\test_anticomp.py .
+test\mitmproxy\addons\test_asgiapp.py .
+test\mitmproxy\addons\test_block.py .....................................
+test\mitmproxy\addons\test_blocklist.py ................
+test\mitmproxy\addons\test_browser.py ........
+test\mitmproxy\addons\test_clientplayback.py ..............
+test\mitmproxy\addons\test_command_history.py .........
+test\mitmproxy\addons\test_comment.py .
+test\mitmproxy\addons\test_core.py ..........
+test\mitmproxy\addons\test_cut.py ..........
+test\mitmproxy\addons\test_disable_h2c.py ...
+test\mitmproxy\addons\test_dns_resolver.py ...........................
+test\mitmproxy\addons\test_dumper.py ...............
+test\mitmproxy\addons\test_errorcheck.py .....
+test\mitmproxy\addons\test_eventstore.py ..
+test\mitmproxy\addons\test_export.py .........................................
+test\mitmproxy\addons\test_intercept.py .....
+test\mitmproxy\addons\test_keepserving.py .
+test\mitmproxy\addons\test_maplocal.py .......................
+test\mitmproxy\addons\test_mapremote.py ....
+test\mitmproxy\addons\test_modifybody.py .........
+test\mitmproxy\addons\test_modifyheaders.py .......
+test\mitmproxy\addons\test_next_layer.py ...............................................................................
+test\mitmproxy\addons\test_onboarding.py .........
+test\mitmproxy\addons\test_proxyauth.py .......................
+test\mitmproxy\addons\test_proxyserver.py ...............s
+test\mitmproxy\addons\test_readfile.py ......
+test\mitmproxy\addons\test_save.py .........
+test\mitmproxy\addons\test_savehar.py ......................
+test\mitmproxy\addons\test_script.py ..................
+test\mitmproxy\addons\test_server_side_events.py .
+test\mitmproxy\addons\test_serverplayback.py .......................
+test\mitmproxy\addons\test_stickyauth.py ..
+test\mitmproxy\addons\test_stickycookie.py .........
+test\mitmproxy\addons\test_strip_dns_https_records.py ..
+test\mitmproxy\addons\test_termlog.py ...
+test\mitmproxy\addons\test_tlsconfig.py ..........................
+test\mitmproxy\addons\test_update_alt_svc.py ..
+test\mitmproxy\addons\test_upstream_auth.py ..
+test\mitmproxy\addons\test_view.py ................................
+test\mitmproxy\contentviews\_view_image\test_image_parser.py ..............
+test\mitmproxy\contentviews\_view_image\test_view.py ..
+test\mitmproxy\contentviews\test___init__.py .....
+test\mitmproxy\contentviews\test__api.py .....
+test\mitmproxy\contentviews\test__compat.py ...
+test\mitmproxy\contentviews\test__registry.py .....
+test\mitmproxy\contentviews\test__utils.py ............
+test\mitmproxy\contentviews\test__view_css.py .FF.........
+test\mitmproxy\contentviews\test__view_dns.py .....
+test\mitmproxy\contentviews\test__view_graphql.py ....
+test\mitmproxy\contentviews\test__view_http3.py ..........
+test\mitmproxy\contentviews\test__view_javascript.py ...
+test\mitmproxy\contentviews\test__view_json.py ...
+test\mitmproxy\contentviews\test__view_mqtt.py ........
+test\mitmproxy\contentviews\test__view_multipart.py ..
+test\mitmproxy\contentviews\test__view_query.py ..
+test\mitmproxy\contentviews\test__view_raw.py ..
+test\mitmproxy\contentviews\test__view_socketio.py ...
+test\mitmproxy\contentviews\test__view_urlencoded.py ..
+test\mitmproxy\contentviews\test__view_wbxml.py ..
+test\mitmproxy\contentviews\test__view_xml_html.py ...FF...
+test\mitmproxy\contentviews\test__view_zip.py ...
+test\mitmproxy\contentviews\test_base.py ..
+test\mitmproxy\coretypes\test_bidi.py .
+test\mitmproxy\coretypes\test_multidict.py ...................
+test\mitmproxy\coretypes\test_serializable.py ....................
+test\mitmproxy\io\test_compat.py ........
+test\mitmproxy\io\test_har.py .........
+test\mitmproxy\io\test_io.py ............
+test\mitmproxy\io\test_tnetstring.py .......
+test\mitmproxy\net\dns\test_classes.py ..
+test\mitmproxy\net\dns\test_domain_names.py ......
+test\mitmproxy\net\dns\test_https_records.py .......
+test\mitmproxy\net\dns\test_op_codes.py ..
+test\mitmproxy\net\dns\test_response_codes.py ...
+test\mitmproxy\net\dns\test_types.py ..
+test\mitmproxy\net\http\http1\test_assemble.py ........
+test\mitmproxy\net\http\http1\test_read.py ..............
+test\mitmproxy\net\http\test_cookies.py ...........
+test\mitmproxy\net\http\test_headers.py .........................
+test\mitmproxy\net\http\test_multipart.py ..
+test\mitmproxy\net\http\test_status_codes.py .
+test\mitmproxy\net\http\test_url.py .......................
+test\mitmproxy\net\http\test_user_agents.py .
+test\mitmproxy\net\http\test_validate.py ............................
+test\mitmproxy\net\test_check.py .
+test\mitmproxy\net\test_encoding.py ..............
+test\mitmproxy\net\test_free_port.py ..
+test\mitmproxy\net\test_local_ip.py ..
+test\mitmproxy\net\test_server_spec.py .........
+test\mitmproxy\net\test_tls.py .......
+test\mitmproxy\platform\test_pf.py .
+test\mitmproxy\proxy\layers\http\test_http.py ..........................................................................................................................
+test\mitmproxy\proxy\layers\http\test_http1.py ............
+test\mitmproxy\proxy\layers\http\test_http2.py ...............................................
+test\mitmproxy\proxy\layers\http\test_http3.py ................................
+test\mitmproxy\proxy\layers\http\test_http_fuzz.py .........
+test\mitmproxy\proxy\layers\http\test_http_version_interop.py ..
+test\mitmproxy\proxy\layers\quic\test__client_hello_parser.py ....
+test\mitmproxy\proxy\layers\quic\test__commands.py .
+test\mitmproxy\proxy\layers\quic\test__events.py .
+test\mitmproxy\proxy\layers\quic\test__hooks.py .
+test\mitmproxy\proxy\layers\quic\test__raw_layers.py .............
+test\mitmproxy\proxy\layers\quic\test__stream_layers.py ...................................
+test\mitmproxy\proxy\layers\test_dns.py .....................
+test\mitmproxy\proxy\layers\test_modes.py .............................
+test\mitmproxy\proxy\layers\test_socks5_fuzz.py .
+test\mitmproxy\proxy\layers\test_tcp.py ........
+test\mitmproxy\proxy\layers\test_tls.py ..........................
+test\mitmproxy\proxy\layers\test_tls_fuzz.py .
+test\mitmproxy\proxy\layers\test_udp.py .......
+test\mitmproxy\proxy\layers\test_websocket.py ....................
+test\mitmproxy\proxy\test_commands.py ..
+test\mitmproxy\proxy\test_context.py .
+test\mitmproxy\proxy\test_events.py ..
+test\mitmproxy\proxy\test_layer.py .........
+test\mitmproxy\proxy\test_mode_servers.py .....................s.....
+test\mitmproxy\proxy\test_mode_specs.py ....
+test\mitmproxy\proxy\test_server.py ....
+test\mitmproxy\proxy\test_server_hooks.py .
+test\mitmproxy\proxy\test_tunnel.py ...........
+test\mitmproxy\proxy\test_tutils.py .............
+test\mitmproxy\proxy\test_utils.py ..
+test\mitmproxy\script\test_concurrent.py ...
+test\mitmproxy\test_addonmanager.py ...........
+test\mitmproxy\test_certs.py .......s.............................
+test\mitmproxy\test_command.py ..........
+test\mitmproxy\test_command_lexer.py .................
+test\mitmproxy\test_connection.py .......
+test\mitmproxy\test_dns.py ...............
+test\mitmproxy\test_eventsequence.py ..............
+test\mitmproxy\test_flow.py .........
+test\mitmproxy\test_flowfilter.py ...........................................................................................................................
+test\mitmproxy\test_hooks.py .
+test\mitmproxy\test_http.py ........................................................................................................
+test\mitmproxy\test_log.py ..
+test\mitmproxy\test_master.py .
+test\mitmproxy\test_options.py .
+test\mitmproxy\test_optmanager.py ................................
+test\mitmproxy\test_proxy.py ..
+test\mitmproxy\test_taddons.py .
+test\mitmproxy\test_tcp.py ...
+test\mitmproxy\test_tls.py ....
+test\mitmproxy\test_types.py ................
+test\mitmproxy\test_udp.py ...
+test\mitmproxy\test_version.py ..
+test\mitmproxy\test_websocket.py ......
+test\mitmproxy\tools\console\test_commander.py .............
+test\mitmproxy\tools\console\test_common.py ....
+test\mitmproxy\tools\console\test_contentview.py .
+test\mitmproxy\tools\console\test_defaultkeys.py .
+test\mitmproxy\tools\console\test_flowview.py .....
+test\mitmproxy\tools\console\test_integration.py F...
+test\mitmproxy\tools\console\test_keymap.py ......
+test\mitmproxy\tools\console\test_master.py ..
+test\mitmproxy\tools\console\test_palettes.py ..
+test\mitmproxy\tools\console\test_quickhelp.py ..........
+test\mitmproxy\tools\console\test_statusbar.py ...........
+test\mitmproxy\tools\test_cmdline.py ....
+test\mitmproxy\tools\test_dump.py ....
+test\mitmproxy\tools\test_main.py ....
+test\mitmproxy\tools\web\test_app.py ...............................................
+test\mitmproxy\tools\web\test_master.py .
+test\mitmproxy\tools\web\test_static_viewer.py ......
+test\mitmproxy\tools\web\test_web_columns.py .
+test\mitmproxy\tools\web\test_webaddons.py ...........
+test\mitmproxy\utils\test_arg_check.py .........
+test\mitmproxy\utils\test_asyncio_utils.py ...
+test\mitmproxy\utils\test_data.py .
+test\mitmproxy\utils\test_debug.py ......
+test\mitmproxy\utils\test_emoji.py .
+test\mitmproxy\utils\test_htpasswd.py ............
+test\mitmproxy\utils\test_human.py ......
+test\mitmproxy\utils\test_magisk.py ...
+test\mitmproxy\utils\test_signals.py ....
+test\mitmproxy\utils\test_sliding_window.py ..
+test\mitmproxy\utils\test_spec.py .
+test\mitmproxy\utils\test_strutils.py ...............
+test\mitmproxy\utils\test_typecheck.py ........
+test\mitmproxy\utils\test_vt_codes.py .
+
+============================================================ FAILURES ============================================================
+___________________________________________ test_beautify[blank-lines-and-spaces.css] ____________________________________________
+
+filename = 'blank-lines-and-spaces.css', tdata = <mitmproxy.utils.data.Data object at 0x0000020BA2BE2510>
+
+>   ???
+E   AssertionError: assert '/* only one ...: right;\n}\n' == '/* only one ...: right;\n}\n'
+E     
+E     - /* only one blank line between */
+E     + /* only one blank line between */
+E     ?                                  +
+E       menu {
+E           color: red
+E       }...
+E     
+E     ...Full output truncated (39 lines hidden), use '-vv' to show
+
+test\mitmproxy\contentviews\test__view_css.py:29: AssertionError
+________________________________________________ test_beautify[block-comment.css] ________________________________________________
+
+filename = 'block-comment.css', tdata = <mitmproxy.utils.data.Data object at 0x0000020BA296FE30>
+
+>   ???
+E   AssertionError: assert '/* line comm...or: #eee\n}\n' == '/* line comm...or: #eee\n}\n'
+E     
+E     - /* line comment */
+E     + /* line comment */
+E     ?                   +
+E       navigation {
+E           color: blue
+E       }...
+E     
+E     ...Full output truncated (30 lines hidden), use '-vv' to show
+
+test\mitmproxy\contentviews\test__view_css.py:29: AssertionError
+___________________________________________________ test_format_xml[cdata.xml] ___________________________________________________
+
+filename = 'cdata.xml', tdata = <mitmproxy.utils.data.Data object at 0x0000020BA296E510>
+
+>   ???
+E   AssertionError: assert '<exampleOfAC...leOfACDATA>\n' == '<exampleOfAC...leOfACDATA>\n'
+E     
+E       <exampleOfACDATA>
+E     -   <![CDATA[
+E     +   <![CDATA[
+E     ?            +
+E     -       Since this is a CDATA section
+E     +       Since this is a CDATA section...
+E     
+E     ...Full output truncated (18 lines hidden), use '-vv' to show
+
+test\mitmproxy\contentviews\test__view_xml_html.py:44: AssertionError
+__________________________________________________ test_format_xml[comment.xml] __________________________________________________
+
+filename = 'comment.xml', tdata = <mitmproxy.utils.data.Data object at 0x0000020BA296DFD0>
+
+>   ???
+E   AssertionError: assert '<exampleOfAC...OfAComment>\n' == '<exampleOfAC...OfAComment>\n'
+E     
+E       <exampleOfAComment>
+E     -   <!--
+E     +   <!--
+E     ?       +
+E     -         Since this is a comment
+E     +         Since this is a comment...
+E     
+E     ...Full output truncated (18 lines hidden), use '-vv' to show
+
+test\mitmproxy\contentviews\test__view_xml_html.py:44: AssertionError
+________________________________________________________ test_integration ________________________________________________________
+
+tdata = <mitmproxy.utils.data.Data object at 0x0000020BA408A7B0>
+console = <test.mitmproxy.tools.console.conftest.ConsoleTestMaster object at 0x0000020BA33E18C0>
+
+>   ???
+E   AssertionError: assert 'http://example.com/' in 'Flows                                                                           \n                                   ...                                    \nProxy:   ? Help        q Quit        E Events      O Options     i Intercept    '
+E    +  where 'Flows                                                                           \n                                   ...                                    \nProxy:   ? Help        q Quit        E Events      O Options     i Intercept    ' = screen_contents()
+E    +    where screen_contents = <test.mitmproxy.tools.console.conftest.ConsoleTestMaster object at 0x0000020BA33E18C0>.screen_contents
+
+test\mitmproxy\tools\console\test_integration.py:7: AssertionError
+------------------------------------------------------- Captured log call --------------------------------------------------------
+ERROR    root:commandexecutor.py:19 Command argument mismatch: 
+    Expected: OrderedDict({'path': <Parameter "path: mitmproxy.types.Path">})
+    Received: ['C:\\My', 'VSCode\\mitmproxy\\test\\mitmproxy\\data\\dumpfile-7.mitm']
+ERROR    root:commandexecutor.py:19 Command requires one flow, specification matched 0.
+======================================================== warnings summary ========================================================
+test\conftest.py:34
+  C:\My VSCode\mitmproxy\test\conftest.py:34: DeprecationWarning: 'asyncio.DefaultEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+    class EagerTaskCreationEventLoopPolicy(asyncio.DefaultEventLoopPolicy):
+
+mitmproxy\flowfilter.py:743: 14 warnings
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:743: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    f.setParseAction(cls.make)
+
+mitmproxy\flowfilter.py:752
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:752: PyparsingDeprecationWarning: 'escChar' argument is deprecated, use 'esc_char'
+    | pp.QuotedString('"', escChar="\\")
+
+mitmproxy\flowfilter.py:753
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:753: PyparsingDeprecationWarning: 'escChar' argument is deprecated, use 'esc_char'
+    | pp.QuotedString("'", escChar="\\")
+
+mitmproxy\flowfilter.py:757: 17 warnings
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:757: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    f.setParseAction(cls.make)
+
+mitmproxy\flowfilter.py:762
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:762: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    f.setParseAction(cls.make)
+
+mitmproxy\flowfilter.py:767
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:767: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    f.setParseAction(FUrl.make)
+
+mitmproxy\flowfilter.py:772
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:772: PyparsingDeprecationWarning: 'infixNotation' deprecated - use 'infix_notation'
+    pp.infixNotation(
+
+mitmproxy\flowfilter.py:781
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:781: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    return expr.setParseAction(lambda x: FAnd(x) if len(x) != 1 else x)
+
+mitmproxy\flowfilter.py:805: 1 warning
+test/mitmproxy/addons/test_blocklist.py: 13 warnings
+test/mitmproxy/addons/test_dumper.py: 2 warnings
+test/mitmproxy/addons/test_intercept.py: 9 warnings
+test/mitmproxy/addons/test_maplocal.py: 7 warnings
+test/mitmproxy/addons/test_mapremote.py: 1 warning
+test/mitmproxy/addons/test_modifybody.py: 7 warnings
+test/mitmproxy/addons/test_modifyheaders.py: 15 warnings
+test/mitmproxy/addons/test_readfile.py: 5 warnings
+test/mitmproxy/addons/test_save.py: 2 warnings
+test/mitmproxy/addons/test_savehar.py: 7 warnings
+test/mitmproxy/addons/test_stickyauth.py: 5 warnings
+test/mitmproxy/addons/test_stickycookie.py: 9 warnings
+test/mitmproxy/addons/test_view.py: 20 warnings
+test/mitmproxy/test_dns.py: 12 warnings
+test/mitmproxy/test_flow.py: 1 warning
+test/mitmproxy/test_flowfilter.py: 405 warnings
+test/mitmproxy/test_http.py: 4 warnings
+test/mitmproxy/test_tcp.py: 4 warnings
+test/mitmproxy/test_udp.py: 4 warnings
+test/mitmproxy/tools/console/test_statusbar.py: 6 warnings
+test/mitmproxy/tools/web/test_app.py: 3 warnings
+test/mitmproxy/utils/test_spec.py: 2 warnings
+  C:\My VSCode\mitmproxy\mitmproxy\flowfilter.py:805: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+    flt = bnf.parse_string(s, parseAll=True)[0]
+
+mitmproxy\command_lexer.py:24
+  C:\My VSCode\mitmproxy\mitmproxy\command_lexer.py:24: PyparsingDeprecationWarning: 'leaveWhitespace' deprecated - use 'leave_whitespace'
+    ).leaveWhitespace()
+
+.venv\Lib\site-packages\pyasn1\codec\ber\encoder.py:952
+  C:\My VSCode\mitmproxy\.venv\Lib\site-packages\pyasn1\codec\ber\encoder.py:952: DeprecationWarning: tagMap is deprecated. Please use TAG_MAP instead.
+    warnings.warn(f"{attr} is deprecated. Please use {newAttr} instead.", DeprecationWarning)
+
+.venv\Lib\site-packages\pyasn1\codec\ber\encoder.py:952
+  C:\My VSCode\mitmproxy\.venv\Lib\site-packages\pyasn1\codec\ber\encoder.py:952: DeprecationWarning: typeMap is deprecated. Please use TYPE_MAP instead.
+    warnings.warn(f"{attr} is deprecated. Please use {newAttr} instead.", DeprecationWarning)
+
+test/mitmproxy/addons/test_save.py: 1 warning
+test/mitmproxy/test_addonmanager.py: 1 warning
+test/mitmproxy/test_command.py: 39 warnings
+test/mitmproxy/test_types.py: 2 warnings
+test/mitmproxy/tools/console/test_commander.py: 31 warnings
+test/mitmproxy/tools/console/test_contentview.py: 6 warnings
+test/mitmproxy/tools/console/test_defaultkeys.py: 81 warnings
+test/mitmproxy/tools/console/test_flowview.py: 65 warnings
+test/mitmproxy/tools/console/test_integration.py: 110 warnings
+test/mitmproxy/tools/console/test_master.py: 4 warnings
+test/mitmproxy/tools/console/test_statusbar.py: 11 warnings
+  C:\My VSCode\mitmproxy\mitmproxy\command.py:203: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parts: pyparsing.ParseResults = command_lexer.expr.parseString(
+
+test/mitmproxy/addons/test_save.py: 1 warning
+test/mitmproxy/test_addonmanager.py: 1 warning
+test/mitmproxy/test_command.py: 39 warnings
+test/mitmproxy/test_command_lexer.py: 15 warnings
+test/mitmproxy/test_types.py: 2 warnings
+test/mitmproxy/tools/console/test_commander.py: 31 warnings
+test/mitmproxy/tools/console/test_contentview.py: 6 warnings
+test/mitmproxy/tools/console/test_defaultkeys.py: 81 warnings
+test/mitmproxy/tools/console/test_flowview.py: 65 warnings
+test/mitmproxy/tools/console/test_integration.py: 110 warnings
+test/mitmproxy/tools/console/test_master.py: 4 warnings
+test/mitmproxy/tools/console/test_statusbar.py: 11 warnings
+  C:\My VSCode\mitmproxy\.venv\Lib\site-packages\pyparsing\util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+    return fn(self, *args, **kwargs)
+
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string['foo'-True]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string["foo"-True]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string["foo    -True]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string["foo 'bar'   -True]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string["foo\\-True]
+  C:\My VSCode\mitmproxy\test\mitmproxy\test_command_lexer.py:26: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    command_lexer.PartialQuotedString.parseString(test_input, parseAll=True)[0]
+
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string['foo' bar'-False]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string['foo' 'bar'-False]
+test/mitmproxy/test_command_lexer.py::test_partial_quoted_string['foo'x-False]
+  C:\My VSCode\mitmproxy\test\mitmproxy\test_command_lexer.py:31: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    command_lexer.PartialQuotedString.parseString(test_input, parseAll=True)
+
+test/mitmproxy/test_command_lexer.py::test_expr['foo'-expected0]
+test/mitmproxy/test_command_lexer.py::test_expr["foo"-expected1]
+test/mitmproxy/test_command_lexer.py::test_expr['foo' 'bar'-expected2]
+test/mitmproxy/test_command_lexer.py::test_expr['foo'x-expected3]
+test/mitmproxy/test_command_lexer.py::test_expr["foo-expected4]
+test/mitmproxy/test_command_lexer.py::test_expr["foo 'bar' -expected5]
+test/mitmproxy/test_command_lexer.py::test_expr["foo\\-expected6]
+  C:\My VSCode\mitmproxy\test\mitmproxy\test_command_lexer.py:47: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    assert list(command_lexer.expr.parseString(test_input, parseAll=True)) == expected
+
+test/mitmproxy/tools/console/test_common.py::test_format_flow
+  C:\My VSCode\mitmproxy\.venv\Lib\site-packages\publicsuffix2\__init__.py:86: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+    with codecs.open(psl_file or PSL_FILE, 'r', encoding='utf8') as psl:
+
+test/mitmproxy/tools/console/test_integration.py::test_options_home_end
+test/mitmproxy/tools/console/test_integration.py::test_options_home_end
+  C:\My VSCode\mitmproxy\mitmproxy\tools\console\options.py:271: PendingDeprecationWarning: get_item_size is going to be deprecated and can be removed soon.This method is not used by the urwid codebase and `get_rows_sizes` is used for the similar purposes.
+    tsize = self.get_item_size(size, self.focus_position, True, item_rows)
+
+test/mitmproxy/tools/console/test_integration.py::test_keybindings_home_end
+test/mitmproxy/tools/console/test_integration.py::test_keybindings_home_end
+  C:\My VSCode\mitmproxy\mitmproxy\tools\console\keybindings.py:162: PendingDeprecationWarning: get_item_size is going to be deprecated and can be removed soon.This method is not used by the urwid codebase and `get_rows_sizes` is used for the similar purposes.
+    tsize = self.get_item_size(size, self.focus_position, True, item_rows)
+
+test/mitmproxy/utils/test_asyncio_utils.py::test_simple
+test/mitmproxy/utils/test_asyncio_utils.py::test_install_exception_handler
+test/mitmproxy/utils/test_asyncio_utils.py::test_eager_task_factory
+  C:\My VSCode\mitmproxy\test\mitmproxy\utils\test_asyncio_utils.py:67: DeprecationWarning: 'asyncio.DefaultEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+    return asyncio.DefaultEventLoopPolicy()
+
+test/mitmproxy/utils/test_asyncio_utils.py::test_eager_task_factory
+  C:\My VSCode\mitmproxy\test\mitmproxy\utils\test_asyncio_utils.py:55: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    assert type(asyncio.get_event_loop_policy()) is asyncio.DefaultEventLoopPolicy
+
+test/mitmproxy/utils/test_asyncio_utils.py::test_eager_task_factory
+  C:\My VSCode\mitmproxy\test\mitmproxy\utils\test_asyncio_utils.py:55: DeprecationWarning: 'asyncio.DefaultEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+    assert type(asyncio.get_event_loop_policy()) is asyncio.DefaultEventLoopPolicy
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================================== short test summary info =====================================================
+FAILED test/mitmproxy/contentviews/test__view_css.py::test_beautify[blank-lines-and-spaces.css] - AssertionError: assert '/* only one ...: right;\n}\n' == '/* only one ...: right;\n}\n'
+FAILED test/mitmproxy/contentviews/test__view_css.py::test_beautify[block-comment.css] - AssertionError: assert '/* line comm...or: #eee\n}\n' == '/* line comm...or: #eee\n}\n'
+FAILED test/mitmproxy/contentviews/test__view_xml_html.py::test_format_xml[cdata.xml] - AssertionError: assert '<exampleOfAC...leOfACDATA>\n' == '<exampleOfAC...leOfACDATA>\n'
+FAILED test/mitmproxy/contentviews/test__view_xml_html.py::test_format_xml[comment.xml] - AssertionError: assert '<exampleOfAC...OfAComment>\n' == '<exampleOfAC...OfAComment>\n'
+FAILED test/mitmproxy/tools/console/test_integration.py::test_integration - AssertionError: assert 'http://example.com/' in 'Flows                                                                        ...
+============================== 5 failed, 1997 passed, 3 skipped, 1327 warnings in 112.06s (0:01:52) ==============================
