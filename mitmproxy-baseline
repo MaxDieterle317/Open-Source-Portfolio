@@ -1,0 +1,19 @@
+Environment
+-----------
+OS: Windows 11
+Python: 3.14.3
+mitmproxy: 13.0.0.dev (+58, d3df6b9)
+Environment: uv / .venv
+
+Baseline Tests
+--------------
+Collected: 2005
+Passed:    1997
+Skipped:   3
+Failed:    5
+Time:      112.06s
+
+Known baseline failures:
+- 2 CSS formatting tests
+- 2 XML formatting tests
+- 1 console integration test
